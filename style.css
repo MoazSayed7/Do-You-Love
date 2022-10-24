@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e0;
+    transition: 0.5s background ease-in;
+    box-shadow: -25px 25px 50px #acacac, 25px -25px 50px #ffffff;
+    border-radius: 40% 60% 61% 39% / 25% 42% 58% 75%;
+    max-width: 450px;
+    width: 450px;
+    height: 300px;
+    animation: animate 2s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes animate {
+    from {
+        border-radius: 40% 60% 61% 39% / 25% 42% 58% 75%;
+    }
+
+    to {
+        border-radius: 70% 20% 81% 32% / 25% 42% 58% 75%;
+    }
+}
+
+.container {
+    padding: 100px;
+    overflow: hidden;
+}
+
+#question {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0;
+    background-color: azure;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.red {
+    background: rgb(240, 7, 7);
+    background: radial-gradient(circle,
+            rgba(240, 7, 7, 1) 0%,
+            rgba(255, 0, 0, 1) 47%,
+            rgba(204, 3, 3, 1) 100%);
+}
